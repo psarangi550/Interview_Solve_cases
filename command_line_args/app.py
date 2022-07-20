@@ -18,7 +18,8 @@ def getUsernames():
     for user in new_resp_dict:
         result.append({"count":user["submission_count"],"name":user["username"]})
     new_lst=sorted(result, key=lambda d: d['count'],reverse=True)
-    return list(set(new_lst))
+    for val in new_lst:
+        print
     # for res in newlist:
     #     output.append(res["name"])
     # return output

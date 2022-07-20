@@ -1,15 +1,36 @@
-list1 = []
+def first():
+    second()
+    print("First Method Executing")
 
 
-str1 = "element"
+def second():
+    third()
+    print("second method executing")
 
-print(sorted(str1))
+
+def third():
+    forth()
+    print("Third method executing")
 
 
-# def func(str1):
-#     global list1
-#     if len(str1)==0:
-#         return
-#     else:
-#         str1=sorted(str1)
-#         if str1
+def forth():
+    print("forth method executing")
+
+
+if __name__ == "__main__":
+    first()
+
+
+# we can write this as
+
+
+def first_alter(n):
+    if n < 1:
+        print(f"{n}method executing ")
+    else:
+        print(f"{n}method executing")
+        first_alter(n - 1)
+
+
+if __name__ == "__main__":
+    first_alter(4)
