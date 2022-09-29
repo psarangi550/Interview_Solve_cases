@@ -1,0 +1,10 @@
+class A:
+    def m1(self):
+        print("m1 method implemented")
+
+def m2(self):
+    print("alternate m2 method")
+
+a=A()
+A.m1=m2
+a.m1()

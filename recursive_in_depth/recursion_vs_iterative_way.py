@@ -3,8 +3,6 @@
 result = []
 a, b = 0, 1
 c = 0
-
-
 def fibo(n):
     global a
     global b
